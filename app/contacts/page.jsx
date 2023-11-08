@@ -9,7 +9,7 @@ function Contacts() {
             <div className='container flex gap-[40px] justify-between'>
                 <div className='flex flex-col pt-[50px]'>
                     <h4 className='mb-[55px] pl-[50px] relative'>
-                        <span className='absolute translate-y-[-50%] top-[50%] w-full left-0 h-[2px] bg-gradient-to-b from-[#8fb5fc] z-[-1] to-[#b7d0ff00]'></span>
+                        <span className='absolute translate-y-[-50%] top-[50%] w-full left-0 h-[1px] bg-gradient-to-b from-[#8fb5fc] z-[-1] to-[#b7d0ff00]'></span>
                         <span className='px-[10px] bg-white text-[#164f96] text-[24px] font-[600] tracking-[0.72px]'>Contacts</span>
                     </h4>
                     <ul className='max-w-[465px] flex flex-col gap-[30px]'>
@@ -27,7 +27,7 @@ function Contacts() {
                         </li>
                     </ul>
                     <h4 className='mb-[55px] mt-[44px] pl-[50px] relative'>
-                        <span className='absolute translate-y-[-50%] top-[50%] w-full left-0 h-[2px] bg-gradient-to-b from-[#8fb5fc] z-[-1] to-[#b7d0ff00]'></span>
+                        <span className='absolute translate-y-[-50%] top-[50%] w-full left-0 h-[1px] bg-gradient-to-b from-[#8fb5fc] z-[-1] to-[#b7d0ff00]'></span>
                         <span className='px-[10px] bg-white text-[#164f96] text-[24px] font-[600] tracking-[0.72px]'>Links</span>
                     </h4>
                     <ul className='max-w-[465px] flex gap-[18px]'>
@@ -49,6 +49,11 @@ function Contacts() {
                     </ul>
                 </div>
                 <Image src="/contactsImages/map.png" className='w-full object-contain' width={ 500 } height={ 500 } alt='map' />
+            </div>
+            <div className='absolute top-[82px] left-[-15px]'>
+                <Image alt='' src="/designDetailsImages/circleDetail.png" width={ 50 } height={ 50 } className='relative right-[-60px] top-0 max-w-[10px] max-h-[10px] object-contain' />
+                <Image alt='' src="/designDetailsImages/circleDetail.png" width={ 50 } height={ 50 } className='absolute top-[-10px] right-[-10px] max-w-[21px] max-h-[21px] object-contain' />
+                <Image alt='' src="/designDetailsImages/circleDetail.png" width={ 50 } height={ 50 } className='max-w-[45px] max-h-[45px] object-contain' />
             </div>
         </div>
     )
