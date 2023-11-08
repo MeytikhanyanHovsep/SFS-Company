@@ -8,7 +8,10 @@ function Contacts() {
             <h5 className='text-[26px] font-[500] text-center leading-[35px] mb-[40px]'>Blog</h5>
             <div className='container flex gap-[40px] justify-between'>
                 <div className='flex flex-col pt-[50px]'>
-                    <h4 className='mb-[55px] pl-[50px] relative'>Contacts</h4>
+                    <h4 className='mb-[55px] pl-[50px] relative'>
+                        <span className='absolute translate-y-[-50%] top-[50%] w-full left-0 h-[2px] bg-gradient-to-b from-[#8fb5fc] z-[-1] to-[#b7d0ff00]'></span>
+                        <span className='px-[10px] bg-white text-[#164f96] text-[24px] font-[600] tracking-[0.72px]'>Contacts</span>
+                    </h4>
                     <ul className='max-w-[465px] flex flex-col gap-[30px]'>
                         <li className='text-[#333] text-[16px] flex items-center gap-[35px]'>
                             <Image src="/contactsImages/phone-call.png" className='max-w-[45px] object-contain' alt='phone-call' width={ 50 } height={ 50 } />
@@ -23,7 +26,10 @@ function Contacts() {
                             4517 Washington Ave. Manchester, Kentucky 39495
                         </li>
                     </ul>
-                    <h4 className='mb-[55px] mt-[44px] pl-[50px] relative'>Links</h4>
+                    <h4 className='mb-[55px] mt-[44px] pl-[50px] relative'>
+                        <span className='absolute translate-y-[-50%] top-[50%] w-full left-0 h-[2px] bg-gradient-to-b from-[#8fb5fc] z-[-1] to-[#b7d0ff00]'></span>
+                        <span className='px-[10px] bg-white text-[#164f96] text-[24px] font-[600] tracking-[0.72px]'>Links</span>
+                    </h4>
                     <ul className='max-w-[465px] flex gap-[18px]'>
                         <li className='inline-flex'>
                             <Link href="">
@@ -42,7 +48,7 @@ function Contacts() {
                         </li>
                     </ul>
                 </div>
-                <Image src="/contactsImages/map.png" className='w-full' width={500} height={500} alt='map' />
+                <Image src="/contactsImages/map.png" className='w-full object-contain' width={ 500 } height={ 500 } alt='map' />
             </div>
         </div>
     )
