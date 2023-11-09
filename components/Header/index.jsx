@@ -18,7 +18,7 @@ function Header() {
                         <li key={ ind }><Link href={ "/" + elm.toLowerCase().replaceAll(" ", "-") } className={ `text-[#181A25] text-[16px] font-[${pathName == elm.toLowerCase().replaceAll(" ", "-") ? 5 : 4 }00]` }>{ elm }</Link></li>
                     )) }
                 </ul>
-                <Link href="/" className='px-[35px] py-[7px] text-[#f301d2] border-[1px] border-[#f301d2] rounded-[5px] text-[16px] hover:text-[#fff] hover:bg-[#f301d2] transition-all duration-200'>Log In</Link>
+                <Link href="/registration" className='px-[35px] py-[7px] text-[#f301d2] border-[1px] border-[#f301d2] rounded-[5px] text-[16px] hover:text-[#fff] hover:bg-[#f301d2] transition-all duration-200'>Log In</Link>
             </nav>
             <Image alt='' width={ 500 } height={ 500 } src="/designDetailsImages/headerDetail.png" className="absolute right-0 top-0 max-w-[365px] object-contain z-[-1]" />
         </header>
