@@ -32,23 +32,34 @@ function OurTeam({ isFull = false }) {
                         </div>
                     )) }
                 </div>
-                : <Swiper
-                    slidesPerView={ 4 } centeredSlides={ false } pagination={ { clickable: true, } } modules={ [Pagination] } className="before:left-0 before:top-0 before:z-[10] px-[50px] mt-[1   50px] container h-[430px]">
-                    { workers.map((elm, ind) => (
-                        <SwiperSlide key={ ind } className=''>
-                            <div className='flex cursor-pointer min-w-full items-center'>
-                                <div className='mx-auto'>
-
-                                    <Image src={ `/workersImages/${ elm.image }` } className='w-[300px] object-cover h-[320px] rounded-[25px]' width={ 350 } height={ 350 } alt='John Smith' />
-                                    <p className='text-[16px] text-left mt-[10px] mb-[5px] font-[400] text-[#999999]'>{ elm.profession }</p>
-                                    <h4 className='text-[22px] text-[#333] font-[500]'>{ elm.firstName }</h4>
+                : <div className='container overflow-hidden'>
+                    <Swiper
+                        breakpoints={ {
+                            0:{
+                                slidesPerView:2
+                            },
+                            750: {
+                                slidesPerView: 3
+                            },
+                            1300: {
+                                slidesPerView: 4,
+                            }
+                        } } slidesPerView={ 4 } spaceBetween={ 20 } centeredSlides={ false } pagination={ { clickable: true, } } modules={ [Pagination] } className="before:left-0 before:top-0 before:z-[10] px-[50px] mt-[60px] overflow-hidden h-[430px] md:h-[370px]">
+                        { workers.map((elm, ind) => (
+                            <SwiperSlide key={ ind }>
+                                <div className='flex cursor-pointer min-w-full items-center'>
+                                    <div className='mx-auto'>
+                                        <Image src={ `/workersImages/${ elm.image }` } className='w-[3000px] md:h-[250px] md:w-[250px] object-cover h-[320px] rounded-[25px]' width={ 350 } height={ 350 } alt='John Smith' />
+                                        <p className='text-[16px] text-left mt-[10px] mb-[5px] font-[400] text-[#999999]'>{ elm.profession }</p>
+                                        <h4 className='text-[22px] text-[#333] font-[500]'>{ elm.firstName }</h4>
+                                    </div>
                                 </div>
-                            </div>
-                        </SwiperSlide>
-                    )) }
-                </Swiper>
+                            </SwiperSlide>
+                        )) }
+                    </Swiper>
+                </div>
             }
-            <Image src="/designDetailsImages/teamDetail.png" alt='' className={`absolute z-[-1] bottom-[-65px] max-w-[245px] object-contain left-[-115px] ${isFull ? "translate-y-[-50%] top-[50%]" : "bottom-[-65px]"}`} width={ 250 } height={ 250 } />
+            <Image src="/designDetailsImages/teamDetail.png" alt='' className={ `absolute z-[-1] bottom-[-65px] max-w-[245px] object-contain left-[-115px] ${ isFull ? "translate-y-[-50%] top-[50%]" : "bottom-[-65px]" }` } width={ 250 } height={ 250 } />
         </div>
     );
 }

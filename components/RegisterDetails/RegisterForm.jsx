@@ -7,7 +7,7 @@ function RegisterForm() {
         <form className='flex flex-col gap-[20px] max-w-[350px] w-[320px] items-center justify-center'>
             <h3 className='flex gap-[10px] items-center justify-center text-[35px] font-[500] tracking-[1.05px] uppercase text-[#F534DB]'>
                 <span>Welcome!</span>
-                <Image src={logoImage} className='w-[45px] object-contain' width={ 50 } height={ 50 } alt='' />
+                <Image src={logoImage} className='w-[45px] object-contain' width={ 50 } height={ 50 } alt='logo' />
             </h3>
             <div className='flex w-full py-[10px] gap-[13px] px-[5px] border-[#ccc] border-b-[1px]'>
                 <Image src="/registerImages/user.png" className='max-w-[17px] object-contain' width={ 50 } height={ 50 } alt='' />
