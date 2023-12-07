@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 
-function RegisterDesignDetails() {
+export default function RegisterDesignDetails() {
     return (
         <div className='absolute h-full top-0 left-0 w-full z-[-1]'>
             <Image src="/designDetailsImages/registerBigDetail.png" alt="" width={ 500 } height={ 500 } className='max-w-[280px] object-contain absolute top-0 left-0' />
@@ -12,5 +12,3 @@ function RegisterDesignDetails() {
         </div>
     )
 }
-
-export default RegisterDesignDetails

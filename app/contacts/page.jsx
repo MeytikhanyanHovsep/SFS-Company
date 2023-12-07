@@ -1,12 +1,13 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-
-function Contacts() {
+import Title from '@/components/TitleText'
+ 
+export default function Contacts() {
     return (
         <div className='relative mt-[65px]'>
-            <h5 className='text-[26px] font-[500] text-center leading-[35px] mb-[40px]'>Blog</h5>
-            <div className='container flex gap-[40px] justify-between'>
+            <Title>Blog</Title>
+            <div className='container flex gap-[40px] justify-between mt-[40px]'>
                 <div className='flex flex-col pt-[50px]'>
                     <h4 className='mb-[55px] pl-[50px] relative'>
                         <span className='absolute translate-y-[-50%] top-[50%] w-full left-0 h-[1px] bg-gradient-to-b from-[#8fb5fc] z-[-1] to-[#b7d0ff00]'></span>
@@ -58,5 +59,3 @@ function Contacts() {
         </div>
     )
 }
-
-export default Contacts

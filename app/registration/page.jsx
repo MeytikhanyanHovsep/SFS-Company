@@ -3,7 +3,7 @@ import RegisterForm from '@/components/RegisterDetails/RegisterForm'
 import Image from 'next/image'
 import React from 'react'
 
-function Registration() {
+export default function Registration() {
     return (
         <div className='relative w-full min-h-screen grid place-items-center'>
             <div className='container flex justify-evenly'>
@@ -14,5 +14,3 @@ function Registration() {
         </div>
     )
 }
-
-export default Registration

@@ -2,7 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import logoImage from "@/public/logo.png"
 
-function RegisterForm() {
+export default function RegisterForm() {
     return (
         <form className='flex flex-col gap-[20px] max-w-[350px] w-[320px] items-center justify-center'>
             <h3 className='flex gap-[10px] items-center justify-center text-[35px] font-[500] tracking-[1.05px] uppercase text-[#F534DB]'>
@@ -33,5 +33,3 @@ function RegisterForm() {
         </form>
     )
 }
-
-export default RegisterForm

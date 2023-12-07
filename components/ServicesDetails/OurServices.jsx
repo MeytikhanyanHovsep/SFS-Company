@@ -1,13 +1,14 @@
 import Image from 'next/image'
 import React from 'react'
+import Title from '@/components/TitleText'
 
-function OurServices({ style }) {
+export default function OurServices({ style }) {
     return (
         <div className={ 'w-full relative ' + style }>
-            <h5 className='text-[26px] font-[500] text-center mb-[75px]'>Our Services</h5>
-            <div className='container'>
-                <div className='flex relative right-0 gap-[75px] justify-end'>
-                    <div className='flex flex-col max-w-[345px] bg-gradient-to-br from-[#a6c1ee] to-[#e2eaf5] border-[1px] border-[#e4eef7] rounded-[26px] px-[23px] gap-[12px] pb-[30px] pt-[55px] relative items-center'>
+            <Title>Our Services</Title>
+            <div className='container flex flex-col flex-wrap pt-[75px] gap-[100px]'>
+                <div className="flex justify-end items-center lg:justify-between lg:gap-[50px] lg:static gap-[85px] relative right-0">
+                    <div className='flex pt-[55px] pb-[30px] flex-col max-w-[345px] bg-gradient-to-br from-[#a6c1ee] to-[#e2eaf5] justify-center border-[1px] border-[#e4eef7] rounded-[26px] gap-[12px] px-[23px] relative items-center'>
                         <Image alt='ui-ux' src="/servicesImages/ui-ux.png" className='absolute w-[110px] object-contain top-[-55px]' width={ 110 } height={ 110 } />
                         <h3 className='font-[600] text-white text-[22px]'>UI/UX Design</h3>
                         <p className='font-[500] text-white text-[16px]'>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
@@ -33,7 +34,7 @@ function OurServices({ style }) {
                         <p className='text-[16px] text-[#999]'>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. </p>
                     </div>
                 </div>
-                <div className='flex relative right-0 gap-[75px] my-[100px] justify-start'>
+                <div className="flex justify-start lg:justify-between lg:gap-[50px] lg:static gap-[85px] relative left-0">
                     <div className='flex flex-col max-w-[345px] px-[15px] pb-[20px] pt-[35px] items-center border-[1px] border-[#e4eef7] rounded-[25px] bg-white'>
                         <div className='relative'>
                             <Image alt='graphic-design' src="/servicesImages/graphic-design.png" width={ 50 } height={ 50 } />
@@ -60,7 +61,7 @@ function OurServices({ style }) {
                         <Image src="/designDetailsImages/servicesGroup3.png" alt='' className='absolute top-[0px] max-w-[38px] object-contain right-[-19px]' width={ 50 } height={ 50 } />
                     </div>
                 </div>
-                <div className='flex relative right-0 gap-[75px] my-[100px] justify-center'>
+                <div className='flex justify-center gap-[85px]'>
                     <div className='flex flex-col max-w-[345px] px-[15px] pb-[20px] pt-[35px] items-center border-[1px] border-[#e4eef7] rounded-[25px] bg-white'>
                         <div className='relative'>
                             <Image alt='seo' src="/servicesImages/seo.png" width={ 50 } height={ 50 } />
@@ -85,5 +86,3 @@ function OurServices({ style }) {
         </div>
     )
 }
-
-export default OurServices
