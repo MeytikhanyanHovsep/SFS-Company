@@ -4,13 +4,13 @@ import Title from '../TitleText'
 
 export default function Orders() {
     return (
-        <div className='w-full relative lg:mt-[100px] mt-[200px] mb-[90px]'>
+        <div className='w-full relative lg:mt-[100px] mt-[200px] xs:mt-[50px] xs:mb-[50px] mb-[90px]'>
             <Title>Why order a website?</Title>
-            <div className='container flex md:flex-col md:items-center justify-between md:mt-[30px] lg:mt-[70px] mt-[60px]'>
+            <div className='container flex md:flex-col md:items-center justify-between gap-[20px]'>
                 <Image src="/servicesImages/coding-services.png" width={ 550 } height={ 550 } className='max-w-[500px] xs:max-w-[330px] md:order-2 lg:max-w-[450px] object-contain' alt='services' />
-                <div className='flex flex-col sm:min-w-full min-h-full relative justify-center lg:gap-[30px] gap-[60px] max-w-min'>
+                <div className='flex flex-col sm:min-w-full min-h-full relative justify-center lg:gap-[30px] gap-[60px] lg:max-w-max max-w-min'>
                     <p className='text-[#333] md:order-2 text-[18px] leading-[32px] tracking-[0.72] font-[300]'>We believe that a great deal of passion, responsibility and professionalism in work is necessary to achieve the desired level of growth and success. We eliminate all the barriers to the industry entry and facilitate profitable development.</p>
-                    <div className='flex min-h-[270px] xs:justify-between sm:min-w-full xs:min-h-[230px] mx-auto justify-center items-end gap-[110px] lg:gap-[50px] max-w-[620px] md:gap-[100px] sm:gap-[60px] xs:gap-0 max-h-[275px] md:pt-[25px]'>
+                    <div className='flex w-full min-h-[270px] xs:justify-between sm:min-w-full xs:min-h-[230px] justify-between items-end gap-[110px] lg:gap-[40px] max-w-[620px] md:gap-[100px] sm:gap-[60px] mx-auto xs:gap-0 max-h-[270px] md:pt-[25px]'>
                         <div className='relative h-full size bg-contain bg-center bg-no-repeat bg-[url(/designDetailsImages/circleDetail3.png)] max-h-[175px] sm:max-h-[100px] xs:max-h-[90px] flex items-center justify-center flex-col p-[20px]'>
                             <Image src="/servicesImages/agreement.png" width={ 55 } height={ 55 } className='max-w-[50px] object-contain' alt='agreement' />
                             <p className='text-[#337ab7] text-[30px] sm:text-[20px] xs:text-[18px] lg:text-[25px] font-[700]'>Reliability</p>

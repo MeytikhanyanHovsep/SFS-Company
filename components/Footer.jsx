@@ -4,7 +4,7 @@ import React from 'react'
 
 function Footer() {
     return (
-        <footer className='w-full grid place-items-center relative mt-[150px] pb-[45px]'>
+        <footer className='w-full grid place-items-center relative mt-[150px] sm:mt-[70px] pb-[45px]'>
             <span className='container h-[1px] bg-[#ccc]'></span>
             <div className='flex container justify-center xs:flex-col xs:justify-start md:flex-wrap gap-[200px] sm:gap-[30px] md:gap-[90px] mt-[50px] mb-[65px] p-0'>
                 <ul className='max-w-[270px] flex flex-col gap-[18px]'>
@@ -38,12 +38,12 @@ function Footer() {
                 <ul>
                     <li className='text-[#333] font-[600] text-[20px] sm:text-[18px] mb-[35px] sm:mb-[15px]'>Follow Us</li>
                     <li className='inline-flex'>
-                        <Link href="">
+                        <Link href="https://www.instagram.com/sfs_it_school/">
                             <Image src="/contactsImages/instagram-logo.png" className='max-w-[30px] sm:max-w-[25px] object-contain' alt='instagram' width={ 50 } height={ 50 } />
                         </Link>
                     </li>
                     <li className='inline-flex mx-[15px]'>
-                        <Link href="">
+                        <Link href="https://www.facebook.com/itschoolvedi">
                             <Image src="/contactsImages/facebook-logo.png" className='max-w-[30px] sm:max-w-[25px] object-contain' alt='facebook' width={ 50 } height={ 50 } />
                         </Link>
                     </li>
@@ -55,7 +55,7 @@ function Footer() {
                 </ul>
             </div>
             <p className='text-[#666] container sm:text-center text-left'>© 2022 | Made by SFS Company</p>
-            <Image src="/designDetailsImages/footerDetail.png" className='absolute bottom-0 left-0 h-[350px] z-[-1] w-full' alt='' height={ 300 } width={ 2000 } />
+            <Image src="/designDetailsImages/footerDetail.png" className='absolute xs:h-[200px] bottom-0 left-0 h-[350px] z-[-1] w-full' alt='' height={ 300 } width={ 2000 } />
         </footer>
     )
 }

@@ -6,7 +6,7 @@ export default function OurServices({ style }) {
     return (
         <div className={ 'w-full relative ' + style }>
             <Title>Our Services</Title>
-            <div className='container flex flex-col flex-wrap pt-[75px] gap-[100px]'>
+            {/* <div className='container flex flex-col flex-wrap gap-[100px]'>
                 <div className="flex justify-end items-center lg:justify-between lg:gap-[50px] lg:static gap-[85px] relative right-0">
                     <div className='flex pt-[55px] pb-[30px] flex-col max-w-[345px] bg-gradient-to-br from-[#a6c1ee] to-[#e2eaf5] justify-center border-[1px] border-[#e4eef7] rounded-[26px] gap-[12px] px-[23px] relative items-center'>
                         <Image alt='ui-ux' src="/servicesImages/ui-ux.png" className='absolute w-[110px] object-contain top-[-55px]' width={ 110 } height={ 110 } />
@@ -82,7 +82,7 @@ export default function OurServices({ style }) {
             </div>
             <Image src="/designDetailsImages/servicesBigDetail.png" className='z-[-1] absolute bottom-[-100px] left-0 h-[850px] max-w-[250px]' alt='' width={ 300 } height={ 1000 } />
             <Image src="/designDetailsImages/servicesGroup1.png" alt='' className='z-[-1] absolute top-[5px] max-w-[245px] object-contain right-[-95px]' width={ 250 } height={ 250 } />
-            <Image src="/designDetailsImages/servicesGroup2.png" alt='' className='z-[-1] absolute bottom-[90px] max-w-[50px] object-contain left-[180px]' width={ 70 } height={ 70 } />
+            <Image src="/designDetailsImages/servicesGroup2.png" alt='' className='z-[-1] absolute bottom-[90px] max-w-[50px] object-contain left-[180px]' width={ 70 } height={ 70 } /> */}
         </div>
     )
 }

@@ -1,9 +1,9 @@
 import DesignDetails from "@/Components/DesignDetails";
 import AboutUs from "@/components/AboutUsDetails";
-import OurTeam from "@/components/AboutUsDetails/OurTeam";
+import OurTeam from "@/components/AboutUsDetails/Team";
 import HomeDetails from "@/components/HomeDetails";
-import Work from "@/components/HomeDetails/OurWork";
-import OurPartners from "@/components/HomeDetails/OurPartners";
+import Work from "@/components/HomeDetails/Work";
+import OurPartners from "@/components/HomeDetails/Partners";
 import Services from "@/components/ServicesDetails/OurServices";
 
 export default function Home() {

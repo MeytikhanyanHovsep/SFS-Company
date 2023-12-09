@@ -8,13 +8,13 @@ import { usePathname } from 'next/navigation'
 function Components({ children }) {
     const blockLayout = usePathname() === "/registration"
     return <>
-        <NextTopLoader color="#2299DD"
+        <NextTopLoader color="#f792df"
             initialPosition={ 0.08 }
             height={ 4 }
             showSpinner={ false }
             easing="ease"
             speed={ 200 }
-            shadow="0 0 10px #2299DD, 0 0 5px #2299DD"
+            shadow="0 0 10px #f792df, 0 0 5px #f792df"
             zIndex={ 1000 }
             showAtBottom={ false } />
         {!blockLayout && <Header />}

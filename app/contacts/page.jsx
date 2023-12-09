@@ -7,31 +7,31 @@ export default function Contacts() {
     return (
         <div className='relative mt-[65px]'>
             <Title>Blog</Title>
-            <div className='container flex gap-[40px] justify-between mt-[40px]'>
-                <div className='flex flex-col pt-[50px]'>
-                    <h4 className='mb-[55px] pl-[50px] relative'>
+            <div className='container flex gap-[40px] md:gap-0 sm:flex-col sm:gap-[50px] justify-between'>
+                <div className='flex flex-col sm:pt-[20px] pt-[50px]'>
+                    <h4 className='mb-[55px] md:mb-[30px] pl-[50px] relative'>
                         <span className='absolute translate-y-[-50%] top-[50%] w-full left-0 h-[1px] bg-gradient-to-b from-[#8fb5fc] z-[-1] to-[#b7d0ff00]'></span>
-                        <span className='px-[10px] bg-white text-[#164f96] text-[24px] font-[600] tracking-[0.72px]'>Contacts</span>
+                        <span className='px-[10px] bg-white text-[#164f96] text-[24px] sm:text-[20px] font-[600] tracking-[0.72px]'>Contacts</span>
                     </h4>
-                    <ul className='max-w-[465px] flex flex-col gap-[30px]'>
-                        <li className='text-[#333] text-[16px] flex items-center gap-[35px]'>
-                            <Image src="/contactsImages/phone-call.png" className='max-w-[45px] object-contain' alt='phone-call' width={ 50 } height={ 50 } />
+                    <ul className='max-w-[465px] flex flex-col xs:gap-[20px] gap-[30px]'>
+                        <li className='text-[#333] text-[16px] flex items-center gap-[35px] md:gap-[10px]'>
+                            <Image src="/contactsImages/phone-call.png" className='min-w-[45px] max-w-[45px] xs:max-w-[30px] xs:min-w-[30px] object-contain' alt='phone-call' width={ 50 } height={ 50 } />
                             (406) 555-0120
                         </li>
-                        <li className='text-[#333] text-[16px] flex items-center gap-[35px]'>
-                            <Image src="/contactsImages/email.png" className='max-w-[45px] object-contain' alt='email' width={ 50 } height={ 50 } />
+                        <li className='text-[#333] text-[16px] flex items-center gap-[35px] md:gap-[10px]'>
+                            <Image src="/contactsImages/email.png" className='min-w-[45px] max-w-[45px] xs:max-w-[30px] xs:min-w-[30px] object-contain' alt='email' width={ 50 } height={ 50 } />
                             nathan.roberts@example.com
                         </li>
-                        <li className='text-[#333] text-[16px] flex items-center gap-[35px]'>
-                            <Image src="/contactsImages/gps.png" className='max-w-[45px] object-contain' alt='gps' width={ 50 } height={ 50 } />
+                        <li className='text-[#333] text-[16px] flex items-center gap-[35px] md:gap-[10px]'>
+                            <Image src="/contactsImages/gps.png" className='min-w-[45px] max-w-[45px] xs:max-w-[30px] xs:min-w-[30px] object-contain' alt='gps' width={ 50 } height={ 50 } />
                             4517 Washington Ave. Manchester, Kentucky 39495
                         </li>
                     </ul>
-                    <h4 className='mb-[55px] mt-[44px] pl-[50px] relative'>
+                    <h4 className='mb-[55px] md:mb-[30px] mt-[44px] pl-[50px] relative'>
                         <span className='absolute translate-y-[-50%] top-[50%] w-full left-0 h-[1px] bg-gradient-to-b from-[#8fb5fc] z-[-1] to-[#b7d0ff00]'></span>
-                        <span className='px-[10px] bg-white text-[#164f96] text-[24px] font-[600] tracking-[0.72px]'>Links</span>
+                        <span className='px-[10px] bg-white text-[#164f96] text-[24px] sm:text-[20px] font-[600] tracking-[0.72px]'>Links</span>
                     </h4>
-                    <ul className='max-w-[465px] flex gap-[18px]'>
+                    <ul className='max-w-[465px] xs:pl-[10px] flex gap-[18px]'>
                         <li className='inline-flex'>
                             <Link href="">
                                 <Image src="/contactsImages/instagram-logo-2.png" className='max-w-[30px] object-contain' alt='instagram' width={ 50 } height={ 50 } />
@@ -49,12 +49,12 @@ export default function Contacts() {
                         </li>
                     </ul>
                 </div>
-                <Image src="/contactsImages/map.png" className='w-full object-contain' width={ 500 } height={ 500 } alt='map' />
+                <Image src="/contactsImages/map.png" className='max-w-full object-contain' width={ 500 } height={ 500 } alt='map' />
             </div>
-            <div className='absolute top-[82px] left-[-15px]'>
+            <div className='absolute top-[82px] z-[-1] xs:top-[50px] sm:top-[100px] sm:scale-[0.8] left-[-15px]'>
                 <Image alt='' src="/designDetailsImages/circleDetail.png" width={ 50 } height={ 50 } className='relative right-[-60px] top-0 max-w-[10px] max-h-[10px] object-contain' />
                 <Image alt='' src="/designDetailsImages/circleDetail.png" width={ 50 } height={ 50 } className='absolute top-[-10px] right-[-10px] max-w-[21px] max-h-[21px] object-contain' />
-                <Image alt='' src="/designDetailsImages/circleDetail.png" width={ 50 } height={ 50 } className='max-w-[45px] max-h-[45px] object-contain' />
+                <Image alt='' src="/designDetailsImages/circleDetail.png" width={ 50 } height={ 50 } className='min-w-[45px] object-contain' />
             </div>
         </div>
     )

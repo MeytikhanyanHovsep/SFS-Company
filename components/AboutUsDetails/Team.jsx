@@ -19,15 +19,15 @@ export default function OurTeam({ isFull = false }) {
         { firstName: "John Smith", profession: "Backend Developer", image: "John Smith.jpg" },
     ]
     return (
-        <div className='w-full mb-[150px] relative'>
+        <div className='w-full mb-[150px] md:mb-[100px] sm:mb-[50px] relative'>
             <Title>Our Team</Title>
             { isFull
-                ? <div className='flex container justify-between mt-[60px] gap-[50px] flex-wrap'>
+                ? <div className='grid gap-y-[30px] container gap-[50px] md:gap-[30px] xs:gap-x-[10px] team-grid xs:gap-y-[20px]'>
                     { workers.map((elm, ind) => (
-                        <div key={ ind } className='cursor-pointer flex flex-col gap-[5px]'>
-                            <Image src={ `/workersImages/${ elm.image }` } className='w-[300px] object-cover h-[320px] rounded-[25px] mb-[10px]' width={ 350 } height={ 350 } alt='John Smith' />
-                            <p className='text-[16px] font-[400] text-[#999999]'>{ elm.profession }</p>
-                            <h4 className='text-[22px] text-[#333] font-[500]'>{ elm.firstName }</h4>
+                        <div key={ ind } className='cursor-pointer flex flex-col xs:gap-0 gap-[5px]'>
+                            <Image src={ `/workersImages/${ elm.image }` } className='w-full object-cover h-[320px] xs:h-[150px] sm:h-[250px] rounded-[25px] mb-[10px]' width={ 350 } height={ 350 } alt='John Smith' />
+                            <p className='text-[16px] xs:text-[14px] font-[400] text-[#999999]'>{ elm.profession }</p>
+                            <h4 className='text-[22px] xs:text-[18px] text-[#333] font-[500]'>{ elm.firstName }</h4>
                         </div>
                     )) }
                 </div>
@@ -45,7 +45,7 @@ export default function OurTeam({ isFull = false }) {
                                 slidesPerView: 4,
                             }
                         } } slidesPerView={ 4 } spaceBetween={ 20 } centeredSlides={ false }
-                        modules={ [Pagination] } className="before:left-0 before:top-0 before:z-[10] px-[50px] mt-[60px] sm:mt-[30px] overflow-hidden h-[430px] md:h-[370px]">
+                        modules={ [Pagination] } className="px-[50px] overflow-hidden sm:max-h-[340px] xs:max-h-[220px] md:h-[370px]">
                         { workers.map((elm, ind) => (
                             <SwiperSlide key={ ind }>
                                 <div className='flex cursor-pointer min-w-full items-center'>
@@ -60,7 +60,7 @@ export default function OurTeam({ isFull = false }) {
                     </Swiper>
                 </div>
             }
-            <Image src="/designDetailsImages/teamDetail.png" alt='' className={ `absolute z-[-1] bottom-[-65px] max-w-[245px] object-contain left-[-115px] ${ isFull ? "translate-y-[-50%] top-[50%]" : "bottom-[-65px]" }` } width={ 250 } height={ 250 } />
+            <Image src="/designDetailsImages/teamDetail.png" alt='' className={ `absolute z-[-1] bottom-[-65px] max-w-[245px] xs:max-w-[170px] xs:left-[-50px] object-contain left-[-115px] ${ isFull ? "translate-y-[-50%] top-[50%]" : "bottom-[-65px]" }` } width={ 250 } height={ 250 } />
         </div>
     );
 }
