@@ -1,11 +1,16 @@
 "use client"
-import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import Title from '@/components/TitleText'
 import { Pagination } from 'swiper/modules';
+import { Roboto } from 'next/font/google';
+import Title from '@/components/TitleText'
 import Image from 'next/image';
+import 'swiper/css/pagination';
+import 'swiper/css';
+
+const roboto = Roboto({
+    subsets: ['latin'],
+    weight: ['500', '400'],
+})
 
 export default function OurTeam({ isFull = false }) {
     const workers = [
@@ -34,9 +39,9 @@ export default function OurTeam({ isFull = false }) {
                 : <div className='container overflow-hidden'>
                     <Swiper
                         breakpoints={ {
-                            0:{
-                                slidesPerView:2,
-                                spaceBetween:10,
+                            0: {
+                                slidesPerView: 2,
+                                spaceBetween: 10,
                             },
                             750: {
                                 slidesPerView: 3,
@@ -44,15 +49,15 @@ export default function OurTeam({ isFull = false }) {
                             1300: {
                                 slidesPerView: 4,
                             }
-                        } } slidesPerView={ 4 } spaceBetween={ 20 } centeredSlides={ false }
-                        modules={ [Pagination] } className="px-[50px] overflow-hidden sm:max-h-[340px] xs:max-h-[220px] md:h-[370px]">
+                        } } slidesPerView={ 4 } pagination={ { clickable: true, } } modules={ [Pagination] } spaceBetween={ 40 } centeredSlides={ false }
+                        className="px-[50px] overflow-hidden md:max-h-[370px] h-[430px] xs:max-h-[280px]">
                         { workers.map((elm, ind) => (
                             <SwiperSlide key={ ind }>
                                 <div className='flex cursor-pointer min-w-full items-center'>
                                     <div className='mx-auto'>
                                         <Image src={ `/workersImages/${ elm.image }` } className='w-[3000px] md:h-[250px] md:w-[250px] object-cover xs:max-h-[170px] h-[320px] rounded-[25px]' width={ 350 } height={ 350 } alt='John Smith' />
-                                        <p className='text-[16px] text-left mt-[10px] xs:mt-[5px] xs:mb-[0px] mb-[5px] font-[400] text-[#999999]'>{ elm.profession }</p>
-                                        <p className='text-[22px] text-[#333] font-[500] xs:text-[18px]'>{ elm.firstName }</p>
+                                        <p className={ `text-[16px] text-left mt-[10px] xs:mt-[5px] xs:mb-[0px] mb-[5px] font-[400] text-[#999999] ${ roboto.className }` }>{ elm.profession }</p>
+                                        <p className={ `text-[22px] text-[#333] font-[500] xs:text-[18px] ${ roboto.className }` }>{ elm.firstName }</p>
                                     </div>
                                 </div>
                             </SwiperSlide>

@@ -23,7 +23,7 @@ body::-webkit-scrollbar-thumb {
     margin-right: auto;
     max-width: 1600px;
     padding-left: 100px;
-    overflow-x: hidden;
+    overflow: hidden;
     padding-right: 100px;
 }
 
@@ -32,13 +32,17 @@ body::-webkit-scrollbar-thumb {
 }
 
 .cards-grid {
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
 }
 
 @media screen and (max-width:1300px) {
     .container {
         padding-right: 50px;
         padding-left: 50px;
+    }
+
+    .cards-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 }
 

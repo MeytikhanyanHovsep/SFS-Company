@@ -2,7 +2,7 @@
 import SecondBlog from '@/components/BlogDetails/SecondBlog'
 import FirstBlog from '@/components/BlogDetails/firstBlog'
 import Image from 'next/image'
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 export default function Blog() {
     const [blogInd, setBlogInd] = useState(0)

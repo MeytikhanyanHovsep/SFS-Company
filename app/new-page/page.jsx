@@ -1,4 +1,3 @@
-import React from 'react'
 import DesignDetails from '@/components/DesignDetails'
 import ServicesDetails from '@/components/ServicesDetails'
 import Orders from '@/components/ServicesDetails/Orders'

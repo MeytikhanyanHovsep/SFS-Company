@@ -1,7 +1,6 @@
 import Image from 'next/image'
-import React from 'react'
 
-function DesignDetails() {
+export default function DesignDetails() {
     return <>
         <div className='z-[-1] absolute top-0 left-0 w-full overflow-hidden'>
             <div className='relative max-w-min'>
@@ -25,5 +24,3 @@ function DesignDetails() {
         </div>
     </>
 }
-
-export default DesignDetails
