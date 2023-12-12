@@ -3,7 +3,7 @@ import Components from '@/components'
 import './globals.css'
 
 
-const roboto = Roboto({ subsets: ['latin'] })
+const roboto = Roboto({ subsets: ['latin'],weight: "500"})
 
 export const metadata = {
   title: 'Create Next App',

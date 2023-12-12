@@ -9,7 +9,7 @@ const roboto = Roboto({
 
 export default function OurServices({ style }) {
     return (
-        <div className={ 'w-full relative ' + style }>
+        <div className={ 'w-full relative max-w-[100vw] overflow-x-hidden ' + style }>
             <Title>Our Services</Title>
             <div className='container mt-[-50px] sm:mt-0 pt-[60px] grid sm:gap-[20px] grid-cols-3 xs:max-w-max xs:grid-cols-1 gap-[100px] lg:gap-[60px] md:grid-cols-2 justify-between'>
                 <div className='flex pt-[55px] pb-[30px] flex-col xs:max-w-[400px] bg-gradient-to-br from-[#a6c1ee] to-[#e2eaf5] justify-center border-[1px] border-[#e4eef7] rounded-[26px] gap-[12px] px-[23px] relative items-center'>

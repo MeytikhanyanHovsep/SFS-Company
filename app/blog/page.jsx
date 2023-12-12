@@ -1,6 +1,6 @@
 "use client"
 import SecondBlog from '@/components/BlogDetails/SecondBlog'
-import FirstBlog from '@/components/BlogDetails/firstBlog'
+import FirstBlog from '@/components/BlogDetails/FirstBlog'
 import Image from 'next/image'
 import { useState } from 'react'
 
