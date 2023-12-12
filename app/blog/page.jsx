@@ -6,7 +6,7 @@ import { useState } from 'react'
 
 export default function Blog() {
     const [blogInd, setBlogInd] = useState(0)
-    const blogs = [<FirstBlog />, <SecondBlog />]
+    const blogs = [<FirstBlog key={1} />, <SecondBlog key={2} />]
 
     return <>
         <div className='relative mt-[65px] sm:mt-[40px]'>
