@@ -21,8 +21,8 @@ export default function Header() {
 
     return (
         <header className='w-full relative'>
-            <nav className='container pt-[35px] sm:pt-[20px] flex justify-between items-center'>
-                <Link href="/"><Image alt='SFS-School' width={ 200 } height={ 200 } src={ logoImg } className="w-[100px] object-contain sm:max-w-[80px]" /></Link>
+            <nav className='container pt-[35px] sm:pt-[20px] xs:pt-[15px] flex justify-between items-center'>
+                <Link href="/"><Image alt='SFS-School' width={ 200 } height={ 200 } src={ logoImg } className="w-[100px] object-contain sm:max-w-[80px] xs:max-w-[70px]" /></Link>
                 <ul className={ `flex transition-all top-0 right-0 text-[16px] text-[#181a25] gap-[45px] sm:gap-[30px] sm:pt-[120px] md:bg-gradient-to-r to-[#b7c2ee] from-[#fbc0e9] items-center justify-center md:fixed ease-linear md:flex-col md:z-[100] duration-[0.3s] ${ menuToggle ? "md:w-full md:h-full md:pl-[30px] sm:pl-[10px] md:rounded-es-full md:shadow-xl md:py-[150px] " : "md:w-0 md:opacity-0 md:h-0 overflow-hidden" }` }>
                     { pages.map((elm, ind) => (
                         <li key={ ind } className='relative pb-[2px] px-[5px]'>

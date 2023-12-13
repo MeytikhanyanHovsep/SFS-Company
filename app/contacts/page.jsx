@@ -44,12 +44,12 @@ export default function Contacts() {
                     </h4>
                     <ul className='max-w-[465px] xs:pl-[10px] flex gap-[18px]'>
                         <li className='inline-flex'>
-                            <Link href="">
+                            <Link href="https://www.instagram.com/sfs_it_school">
                                 <Image src="/contactsImages/instagram-logo-2.png" className='max-w-[30px] object-contain' alt='instagram' width={ 50 } height={ 50 } />
                             </Link>
                         </li>
                         <li className='inline-flex mx-[15px]'>
-                            <Link href="">
+                            <Link href="https://www.facebook.com/itschoolvedi">
                                 <Image src="/contactsImages/facebook-logo-2.png" className='max-w-[30px] object-contain' alt='facebook' width={ 50 } height={ 50 } />
                             </Link>
                         </li>

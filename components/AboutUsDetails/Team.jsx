@@ -14,14 +14,14 @@ const roboto = Roboto({
 
 export default function OurTeam({ isFull = false }) {
     const workers = [
-        { firstName: "John Smith", profession: "Backend Developer", image: "John Smith.jpg" },
-        { firstName: "John Smith", profession: "Backend Developer", image: "John Smith.jpg" },
-        { firstName: "John Smith", profession: "Backend Developer", image: "John Smith.jpg" },
-        { firstName: "John Smith", profession: "Backend Developer", image: "John Smith.jpg" },
-        { firstName: "John Smith", profession: "Backend Developer", image: "John Smith.jpg" },
-        { firstName: "John Smith", profession: "Backend Developer", image: "John Smith.jpg" },
-        { firstName: "John Smith", profession: "Backend Developer", image: "John Smith.jpg" },
-        { firstName: "John Smith", profession: "Backend Developer", image: "John Smith.jpg" },
+        { firstName: "John Smith", profession: "Backend Developer", image: "John Smith.png" },
+        { firstName: "John Smith", profession: "Backend Developer", image: "John Smith.png" },
+        { firstName: "John Smith", profession: "Backend Developer", image: "John Smith.png" },
+        { firstName: "John Smith", profession: "Backend Developer", image: "John Smith.png" },
+        { firstName: "John Smith", profession: "Backend Developer", image: "John Smith.png" },
+        { firstName: "John Smith", profession: "Backend Developer", image: "John Smith.png" },
+        { firstName: "John Smith", profession: "Backend Developer", image: "John Smith.png" },
+        { firstName: "John Smith", profession: "Backend Developer", image: "John Smith.png" },
     ]
     return (
         <div className='w-full mb-[150px] md:mb-[100px] sm:mb-[50px] relative'>

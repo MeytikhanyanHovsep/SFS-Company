@@ -27,7 +27,7 @@ export default function Orders() {
                                 <Image src="/designDetailsImages/circleDetail3.png" className='absolute top-0 left-0 object-contain max-w-full z-[-1]' width={ 200 } height={ 200 } alt='' />
                             </div>
                             <p className={ `text-[#337ab7] text-[30px] sm:text-[20px] xs:text-[18px] lg:text-[25px] font-[500] ${ roboto.className }` }>Quality</p>
-                            <Image className='absolute max-w-[45px] top-[-25px] z-[-1] left-[-30px] object-contain' src="/designDetailsImages/servicesGroup3.png" alt='' width={ 50 } height={ 50 } />
+                            <Image className='absolute max-w-[45px] top-[-25px] z-[-1] left-[-30px] object-contain' src="/designDetailsImages/servicesGroup2.png" alt='' width={ 50 } height={ 50 } />
                         </div>
                         <div className='relative max-h-[175px] sm:max-h-[100px] xs:max-h-[90px] flex bottom-0 items-center justify-center flex-col pb-[10px]'>
                             <div className='relative p-[15px]'>
@@ -35,7 +35,7 @@ export default function Orders() {
                                 <Image src="/designDetailsImages/circleDetail3.png" className='absolute top-0 left-0 object-contain max-w-full z-[-1]' width={ 200 } height={ 200 } alt='' />
                             </div>
                             <p className={ `text-[#337ab7] text-[30px] sm:text-[20px] xs:text-[18px] lg:text-[25px] font-[500] ${ roboto.className }` }>Efficiency</p>
-                            <Image className='absolute z-[-1] max-w-[45px] bottom-[-20px] right-[-80px] object-contain' src="/designDetailsImages/servicesGroup3.png" alt='' width={ 50 } height={ 50 } />
+                            <Image className='absolute z-[-1] max-w-[45px] bottom-[-20px] right-[-80px] object-contain' src="/designDetailsImages/servicesGroup2.png" alt='' width={ 50 } height={ 50 } />
                         </div>
                     </div>
                 </div>
