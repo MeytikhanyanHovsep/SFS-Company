@@ -44,17 +44,17 @@ export default function Footer() {
                     <li className={ `text-[#333] font-[500] text-[20px] sm:text-[18px] mb-[35px] sm:mb-[15px] ${ roboto.className }` }>Follow Us</li>
                     <li className='inline-flex'>
                         <Link href="https://www.instagram.com/sfs_it_school/">
-                            <Image src="/contactsImages/instagram-logo.png" className='max-w-[30px] sm:max-w-[25px] object-contain' alt='instagram' width={ 50 } height={ 50 } />
+                            <Image src="/contactsImages/instagram-logo.png" className='max-w-[30px] sm:max-w-[25px] object-contain' alt='Instagram' width={ 50 } height={ 50 } />
                         </Link>
                     </li>
                     <li className='inline-flex mx-[15px]'>
                         <Link href="https://www.facebook.com/itschoolvedi">
-                            <Image src="/contactsImages/facebook-logo.png" className='max-w-[30px] sm:max-w-[25px] object-contain' alt='facebook' width={ 50 } height={ 50 } />
+                            <Image src="/contactsImages/facebook-logo.png" className='max-w-[30px] sm:max-w-[25px] object-contain' alt='Facebook' width={ 50 } height={ 50 } />
                         </Link>
                     </li>
                     <li className='inline-flex'>
                         <Link href="">
-                            <Image src="/contactsImages/linkedin-logo.png" className='max-w-[30px] sm:max-w-[25px] object-contain' alt='linkedin' width={ 50 } height={ 50 } />
+                            <Image src="/contactsImages/linkedin-logo.png" className='max-w-[30px] sm:max-w-[25px] object-contain' alt='Linkedin' width={ 50 } height={ 50 } />
                         </Link>
                     </li>
                 </ul>
