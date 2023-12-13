@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={ `${ roboto.className } max-w-[100vw] overflow-x-hidden` }>
-        <Components children={ children } />
+        <Components child={ children } />
       </body>
     </html>
   )

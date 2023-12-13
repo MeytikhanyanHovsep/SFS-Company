@@ -4,7 +4,7 @@ import Header from './Header'
 import NextTopLoader from 'nextjs-toploader'
 import { usePathname } from 'next/navigation'
 
-function Components({ children }) {
+function Components({ child }) {
     const blockLayout = usePathname() === "/registration"
     
     return <>
@@ -18,7 +18,7 @@ function Components({ children }) {
             zIndex={ 1000 }
             showAtBottom={ false } />
         { !blockLayout && <Header /> }
-        { children }
+        { child }
         { !blockLayout && <Footer /> }
     </>
 }
