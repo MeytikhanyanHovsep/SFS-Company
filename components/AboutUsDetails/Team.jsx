@@ -65,7 +65,7 @@ export default function OurTeam({ isFull = false }) {
                     </Swiper>
                 </div>
             }
-            <Image src="/designDetailsImages/teamDetail.png" alt='' className={ `absolute z-[-1] bottom-[-65px] max-w-[245px] xs:max-w-[170px] xs:left-[-50px] object-contain left-[-115px] ${ isFull ? "translate-y-[-50%] top-[50%]" : "bottom-[-65px]" }` } width={ 250 } height={ 250 } />
+            <Image src="/designDetailsImages/teamDetail.png" alt='' className={ `absolute z-[-1]  max-w-[245px] xs:max-w-[150px] xs:left-[-50px] object-contain left-[-115px] ${ isFull ? "translate-y-[-50%] top-[50%] bottom-[65px]" : "bottom-[-65px] xs:bottom-0" }` } width={ 250 } height={ 250 } />
         </div>
     );
 }

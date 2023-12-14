@@ -12,7 +12,7 @@ export default function Orders() {
         <div className='w-full relative lg:mt-[100px] mt-[200px] xs:mt-[50px] xs:mb-[50px] mb-[90px]'>
             <Title>Why order a website?</Title>
             <div className='container flex md:flex-col md:items-center justify-between gap-[20px]'>
-                <Image src="/servicesImages/coding-services.png" width={ 550 } height={ 550 } className='max-w-[500px] xs:max-w-[330px] md:order-2 lg:max-w-[450px] object-contain' alt='services' />
+                <Image src="/servicesImages/coding-services.png" width={ 550 } height={ 550 } className='max-w-[500px] xs:w-full md:order-2 lg:max-w-[450px] object-contain' alt='services' />
                 <div className='flex flex-col sm:min-w-full min-h-full relative justify-center lg:gap-[30px] gap-[60px] lg:max-w-max max-w-min'>
                     <p className={ `text-[#333] md:order-2 text-[18px] leading-[32px] tracking-[0.72] font-[300] sm:text-[16px] ${ roboto.className }` }>We believe that a great deal of passion, responsibility and professionalism in work is necessary to achieve the desired level of growth and success. We eliminate all the barriers to the industry entry and facilitate profitable development.</p>
                     <div className='flex w-full min-h-[270px] xs:justify-between sm:min-w-full xs:min-h-[230px] justify-between items-end gap-[110px] lg:gap-[40px] max-w-[620px] md:gap-[100px] sm:gap-[60px] mx-auto xs:gap-0 max-h-[270px] md:pt-[25px]'>

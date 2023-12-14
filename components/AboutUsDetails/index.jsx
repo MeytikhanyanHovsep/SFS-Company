@@ -12,7 +12,7 @@ export default function AboutUsDetails() {
         <div className='mt-[125px] xs:mt-[80px] w-full mb-[150px] xs:mb-[80px]'>
             <Title>Who are we?</Title>
             <div className='container sm:flex-col sm:mt-0 flex justify-between items-center pl-[100px] overflow-hidden' >
-                <Image alt='programmer' src="/aboutUsImages/programmer.png" width={ 700 } height={ 700 } className='sm:order-2 lg:max-w-[370px] max-w-[500px] sm:max-w-[300px] object-contain ' />
+                <Image alt='programmer' src="/aboutUsImages/programmer.png" width={ 700 } height={ 700 } className='sm:order-2 xs:w-full lg:max-w-[370px] max-w-[500px] sm:max-w-[300px] object-contain ' />
                 <div className='relative grid grid-cols-2 w-full max-w-[650px] justify-center'>
                     <div className='flex top-[20px] relative md:static sm:flex-row md:flex-col px-[17px] md:py-[30px] py-[75px] gap-[20px] sm:gap-[10px] items-center justify-center xs:flex-col rounded-[15px]'>
                         <span className={ `text-[#96b9f3] text-[45px] md:text-[40px] sm:text-[30px] font-[700] ${ roboto.className }` }>120+</span>

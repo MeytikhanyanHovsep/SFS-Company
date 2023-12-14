@@ -37,11 +37,11 @@ export default function Header() {
                         <span className="h-[3px] left-0 w-10 absolute -rotate-45 bg-white"></span>
                     </button></li>
                 </ul>
-                <div className='flex gap-[30px] sm:gap-[15px] justify-center items-center'>
+                <div className='flex gap-[30px] sm:gap-[15px] xs:gap-[7px] justify-center items-center'>
                     <button className="hidden md:block focus:outline-none" onClick={ () => setMenuToggle(true) }>
-                        <Image src={ burgerImg } alt='menu' width={ 100 } height={ 100 } className='max-w-[50px] xs:max-w-[45px] object-contain' />
+                        <Image src={ burgerImg } alt='menu' width={ 100 } height={ 100 } className='max-w-[50px] xs:max-w-[40px] object-contain' />
                     </button>
-                    <Link href="/" className={ `px-[35px] sm:px-[15px] sm:py-[5px] py-[7px] text-[#f301d2] border-[1px] border-[#f301d2] rounded-[5px] text-[16px] hover:text-[#fff] hover:bg-[#f301d2] transition-all duration-200 ${ roboto.className }` }>Log In</Link>
+                    <Link href="/" className={ `px-[35px] sm:px-[15px] xs:py-[3px] xs:px-[10px] sm:py-[5px] py-[7px] text-[#f301d2] border-[1px] border-[#f301d2] rounded-[5px] xs:text-[14px] text-[16px] hover:text-[#fff] hover:bg-[#f301d2] transition-all duration-200 ${ roboto.className }` }>Log In</Link>
                 </div>
             </nav>
             <Image alt='' width={ 500 } height={ 500 } src="/designDetailsImages/headerDetail.png" className="absolute right-0 top-0 max-w-[365px] sm:max-w-[150px] md:max-w-[250px] lg:max-w-[300px] object-contain z-[-1]" />
