@@ -12,7 +12,7 @@ export default function OurServices({ style }) {
         <div className={ 'w-full relative max-w-[100vw] overflow-x-hidden ' + style }>
             <Title>Our Services</Title>
             <div className='container mt-[-50px] sm:mt-0 pt-[60px] grid sm:gap-[20px] grid-cols-3 xs:max-w-max xs:grid-cols-1 gap-[100px] lg:gap-[60px] md:grid-cols-2 justify-between'>
-                <div className='flex pt-[55px] xs:pb-[10px] pb-[30px] flex-col xs:max-w-[350px] bg-gradient-to-br from-[#a6c1ee] to-[#e2eaf5] justify-center border-[1px] border-[#e4eef7] rounded-[26px] gap-[12px] px-[23px] relative items-center'>
+                <div className='flex pt-[55px] xs:pb-[20px] pb-[30px] flex-col xs:max-w-[350px] bg-gradient-to-br from-[#a6c1ee] to-[#e2eaf5] justify-center border-[1px] border-[#e4eef7] rounded-[26px] gap-[12px] px-[23px] relative items-center'>
                     <Image alt='graphic-design' src="/servicesImages/graphic-design.png" className='absolute sm:max-w-[80px] w-[110px] object-contain xs:top-[-40px] top-[-55px]' width={ 110 } height={ 110 } />
                     <h3 className={ `font-[500] break-normal text-white text-[22px] sm:text-[20px] xs:text-[18px] ${ roboto.className }` }>Graphic Design</h3>
                     <p className={ `font-[500] text-white text-[16px] sm:text-[14px] ${ roboto.className }` }>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>

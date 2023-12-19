@@ -2,11 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-* {
-    font-family: 'Roboto', sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto&display=swap');
 
 body::-webkit-scrollbar {
     width: 5px;
@@ -33,6 +29,10 @@ body::-webkit-scrollbar-thumb {
 
 .cards-grid {
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+}
+
+.font-roboto{
+    font-family: Roboto, sans-serif;
 }
 
 @media screen and (max-width:1300px) {
